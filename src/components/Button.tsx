@@ -1,6 +1,16 @@
-function Button(){
+import { useState } from "react";
+
+export function Button() {
+    const [counter, setCounter] = useState(0) //Imutavel, se precisar criar um novo estado
+
+    function increment() {
+        setCounter(counter + 1);
+        console.log(counter);
+    }
+
     return (
-        <button> Clique aqui</button>
-    )
+        <button onClick={increment}>
+            {counter}
+        </button>
+     )  
 }
-export default Button;

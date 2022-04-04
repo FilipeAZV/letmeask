@@ -1,7 +1,13 @@
+import { Button } from './components/Button'
+
 function App() {
   return (
     <div>
-      <a href="" target="_blank"></a>
+      <Button />
+      <Button />
+      <Button />
+      <Button />
+      <Button />
     </div>
   );
 }
